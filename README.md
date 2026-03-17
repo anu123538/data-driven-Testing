@@ -12,17 +12,17 @@ This project demonstrates a robust **Data-Driven Testing (DDT)** framework using
 ## 🛠️ Tech Stack
 * **Tool:** Playwright
 * **Language:** JavaScript
-* **Data Source:** Microsoft Excel (`.xlsx`)
+* **Data Source:** Microsoft Excel 
 * **CI/CD:** GitHub Actions
 
 ## 📂 Project Structure
 ```text
-├── .github/workflows      # CI/CD pipeline configuration
-├── tests/                 # Playwright test scripts
-├── data/                  # Excel sheets containing test data
-├── playwright-report/     # Generated test execution reports
-├── playwright.config.js   # Global configuration for Playwright
-└── package.json           # Project dependencies
+├── .github/workflows      
+├── tests/                 
+├── data/                  
+├── playwright-report/     
+├── playwright.config.js   
+└── package.json           
 ```
 
 ## ⚙️ Setup & Installation
@@ -40,7 +40,7 @@ This project demonstrates a robust **Data-Driven Testing (DDT)** framework using
 
 3. **Run Tests:**
    ```bash
-   npx playwright test
+   npx playwright test--headed
    ```
 
 4. **View HTML Report:**
