@@ -29,7 +29,7 @@ This project demonstrates a robust **Data-Driven Testing (DDT)** framework using
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-link>
+   git clone <https://github.com/anu123538/data-driven-Testing/>
    cd Playwright-DataDriven
    ```
 
