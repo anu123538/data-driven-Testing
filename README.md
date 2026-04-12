@@ -1,64 +1,113 @@
+ඔයාගේ දැනට තියෙන README එකට මම කලින් කියපු වැදගත් කරුණු (Badges, Professional summary, සහ Roadmap) ඇතුළත් කරලා, කිසිම දෙයක් අඩු නොකර සම්පූර්ණ Code එක පහතින් ලියා තියෙනවා. මේක කෙලින්ම copy කරලා ඔයාගේ GitHub README.md එකට දාන්න.
 
-# Playwright Data-Driven Automation Framework
+````markdown
+# 🚀 Playwright Data-Driven Automation Framework
 
-This project demonstrates a robust **Data-Driven Testing (DDT)** framework using **Playwright** and **JavaScript**. It is designed to automate system login processes by fetching test data dynamically from an **Excel sheet**.
+![Playwright Tests](https://github.com/anu123538/data-driven-Testing/actions/workflows/playwright.yml/badge.svg)
+![Playwright Version](https://img.shields.io/badge/playwright-v1.40+-2EAD33?logo=playwright)
+![Language](https://img.shields.io/badge/language-JavaScript-F7DF1E?logo=javascript)
 
-## 🚀 Key Features
-* **Data-Driven Logic:** Decouples test data from test scripts using Excel integration.
-* **Playwright Automation:** Fast and reliable end-to-end testing for modern web apps.
-* **CI/CD Integration:** Configured with GitHub Actions to run tests automatically on every push.
-* **Automated Reporting:** Generates detailed HTML reports for every test execution.
+This project demonstrates a robust **Data-Driven Testing (DDT)** framework using **Playwright** and **JavaScript**. It is specifically engineered to handle complex login scenarios by dynamically fetching test data from **Excel sheets**, ensuring high test coverage with minimal code duplication.
+
+---
+
+## 🌟 Key Features
+
+* **Data-Driven Logic:** Decouples test data from test scripts using seamless Excel integration.
+* **Cross-Browser Validation:** Simultaneously executes tests on **Chromium, Firefox, and WebKit** to ensure consistent UI/UX.
+* **CI/CD Pipeline:** Fully integrated with **GitHub Actions** for automated regression testing on every push and pull request.
+* **Professional Reporting:** Generates detailed HTML reports including trace logs and failure screenshots.
+* **Parallel Execution:** Optimized for speed, running multiple data sets concurrently across different browsers.
+
+---
 
 ## 🛠️ Tech Stack
-* **Tool:** Playwright
-* **Language:** JavaScript
-* **Data Source:** Microsoft Excel 
-* **CI/CD:** GitHub Actions
+
+| Component | Technology |
+| :--- | :--- |
+| **Automation Tool** | [Playwright](https://playwright.dev/) |
+| **Programming Language** | JavaScript (Node.js) |
+| **Data Source** | Microsoft Excel (.xlsx) |
+| **CI/CD Platform** | GitHub Actions |
+| **Reporting** | Playwright HTML Reporter |
+
+---
 
 ## 📂 Project Structure
+
 ```text
-├── .github/workflows      
-├── tests/                 
-├── data/                  
-├── playwright-report/     
-├── playwright.config.js   
-└── package.json           
-```
+├── .github/workflows/     # CI/CD pipeline configuration
+├── tests/                 # Test scripts and test suites
+├── data/                  # External data files (Excel sheet)
+├── utils/                 # Data loader and helper functions
+├── playwright-report/     # Auto-generated HTML reports
+├── playwright.config.js   # Framework configuration (Browsers, Parallelism)
+└── package.json           # Project dependencies and scripts
+````
 
-## ⚙️ Setup & Installation
+-----
 
-1. **Clone the repository:**
-   ```bash
-   git clone <https://github.com/anu123538/data-driven-Testing/>
-   cd Playwright-DataDriven
-   ```
+⚙️ Setup & Installation
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+1.  Clone the repository:
 
-3. **Run Tests:**
-   ```bash
-   npx playwright test--headed
-   ```
+    
+    git clone [https://github.com/anu123538/data-driven-Testing.git](https://github.com/anu123538/data-driven-Testing.git)
+    cd data-driven-Testing
 
-4. **View HTML Report:**
-   ```bash
-   npx playwright show-report
-   ```
+
+2.  Install dependencies:
+
+   
+    npm install
+   
+
+3.  **Run All Tests (Headless):**
+
+    ```bash
+    npx playwright test
+    ```
+
+4.  Run Tests in Headed Mode:
+
+
+    npx playwright test --headed
+  
+
+5.  Generate & View HTML Report:
+
+   
+    npx playwright show-report
+
 
 ## ✅ Test Results & Execution
-The framework executes multiple test cases based on the data provided in the Excel sheet. Below is the status of the latest execution:
 
-* **Test Status:** Passing (See GitHub Actions badge)
-<img width="1099" height="359" alt="Screenshot 2026-03-17 170651" src="https://github.com/user-attachments/assets/2482a5be-3b48-41e2-93d9-e77fc03831dd" />
+The framework validates multiple login scenarios (Success, Incorrect User, Invalid Password) by iterating through the Excel data provider.
 
-Execution Environment: Chromium, Firefox, Webkit (Cross-browser)
-  <img width="1333" height="663" alt="Screenshot 2026-03-16 172824" src="https://github.com/user-attachments/assets/39303220-c9d8-47e2-bf84-420fa6637b8b" />
+**Latest Build Status:** Passing  
+**Execution Environment:** Chromium, Firefox, Webkit (Cross-browser)
+
+\<img width="1099" alt="GitHub Actions Execution" src="https://github.com/user-attachments/assets/2482a5be-3b48-41e2-93d9-e77fc03831dd" /\>
+
+\<img width="1333" alt="Browser Test Matrix" src="https://github.com/user-attachments/assets/39303220-c9d8-47e2-bf84-420fa6637b8b" /\>
 
 
 
-### 👨‍💻 About Me
-I am a third Year University Student and an Aspiring Software Quality Assurance (SQA) Engineer This project showcases my skills in Automation, CI/CD, and Data-Driven Testing strategies.
+## 🗺️ Roadmap & Future Enhancements
+
+  - [ ] Implement **Page Object Model (POM)** for enhanced script maintainability.
+  - [ ] Integrate **Allure Reporting** for advanced analytics.
+  - [ ] Add **API Testing** capabilities to the same framework.
+  - [ ] Secure sensitive data using Environment Variables (.env).
+
+
+
+## 👨‍💻 About Me
+
+I am a 3rd-year University Student and an **Aspiring Software Quality Assurance (SQA) Engineer**.  where I apply automation strategies to solve industrial challenges. This project reflects my expertise in building scalable automation solutions and managing end-to-end CI/CD workflows.
+
+
+
+© 2026 Anuththara Imanshi. Built with passion for Quality Engineering.
+
 
